@@ -6,20 +6,21 @@
 
 ## 在线阅读
 
-- GitHub Pages：https://koopawu.github.io/intimate-relationships-notes/
-- 仓库主页即为完整静态网站入口：`index.html`
+- 仓库主页：https://github.com/koopawu/intimate-relationships-notes
+- 启用 GitHub Pages 后访问：https://koopawu.github.io/intimate-relationships-notes/
+- 完整静态网站入口：`index.html`
 
 ## 内容特色
 
 - **14 章完整精读**：一句话主旨、知识框架、核心观点、经典研究、金句、名词速查与咨询师手记。
 - **8 条全书核心观点**：从归属需要、吸引力与沟通，到冲突、承诺和关系修复。
-- **书外新知独立标记**：算法约会、AI 伴侣、依恋可塑性、关系多样性、phubbing 与 ghosting 等前沿议题，均与原书内容明确区分。
-- **7 张主题插画**：暖色、低饱和视觉体系，覆盖依恋、吸引、沟通、冲突、修复与未来关系等主题。
-- **纯静态实现**：无框架、无构建步骤，支持桌面与移动端，包含章节目录、滚动跟随与平滑跳转。
+- **书外新知独立标记**：覆盖 8 个研究方向、28 条补充条目；算法约会、AI 伴侣、依恋可塑性、关系多样性、phubbing 与 ghosting 等议题均与原书内容明确区分。
+- **7 张主题插画**：暖色、低饱和 SVG 视觉体系，覆盖依恋、吸引、沟通、冲突、修复与未来关系等主题。
+- **纯静态实现**：无框架、无构建步骤，支持桌面与移动端，包含章节目录、滚动跟随、平滑跳转和返回顶部。
 
 ## 本地预览
 
-无需安装依赖，可直接打开 `index.html`，或在仓库根目录运行：
+无需安装依赖。在仓库根目录启动 HTTP 服务：
 
 ```bash
 python3 -m http.server 8000
@@ -27,15 +28,22 @@ python3 -m http.server 8000
 
 然后访问 `http://localhost:8000`。
 
+> 页面通过 `fetch()` 加载 `sections/` 中的章节内容，请使用 HTTP 服务预览，不要直接双击 `index.html`。
+
 ## 项目结构
 
 ```text
 .
-├── index.html                  # 完整单页网站（CSS / JavaScript 内联）
+├── index.html                  # 页面外壳、样式、目录与交互脚本
+├── sections/                   # 17 个静态内容文件
+│   ├── preface.html            # 阅读说明
+│   ├── core.html               # 全书核心观点
+│   ├── ch1.html … ch14.html    # 第 1—14 章精读
+│   └── beyond.html             # 书外新知专题
 ├── images/                     # 7 张 SVG 主题插画
-├── .gitattributes
+├── .gitattributes              # Git 文本与换行符规范
 ├── .gitignore
-├── .nojekyll
+├── .nojekyll                   # GitHub Pages 直出静态文件
 └── README.md
 ```
 
