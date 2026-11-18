@@ -5,6 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>《亲密关系》深度读书笔记 · 罗兰·米勒 第6版</title>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23B85C38'/%3E%3Cpath d='M32 49S12 38 12 24c0-11 14-14 20-5 6-9 20-6 20 5 0 14-20 25-20 25Z' fill='%23F7F3EC'/%3E%3C/svg%3E" rel="icon"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700;900&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
@@ -38,7 +39,7 @@ section{scroll-margin-top:24px}
 .sidebar ul{list-style:none}
 .sidebar .nav-group{padding:14px 26px 6px;font-size:11.5px;letter-spacing:.18em;color:var(--gold);
   font-weight:700;text-transform:uppercase}
-.sidebar li a{display:flex;align-items:baseline;gap:9px;padding:7px 26px;font-size:14px;
+.sidebar li a{display:flex;align-items:baseline;gap:9px;padding:7px 26px;font-size:14px;min-height:44px;
   color:var(--ink-soft);border-left:3px solid transparent;transition:all .18s ease}
 .sidebar li a .nav-num{font-family:var(--serif);font-size:11.5px;color:#B7AA92;font-weight:700;min-width:20px}
 .sidebar li a:hover{color:var(--terra);background:rgba(184,92,56,.06);text-decoration:none}
@@ -49,7 +50,7 @@ section{scroll-margin-top:24px}
 /* ---------- topbar (mobile) ---------- */
 .topbar{display:none;position:fixed;top:0;left:0;right:0;height:56px;background:#F1EAE0;
   border-bottom:1px solid var(--line);z-index:70;align-items:center;padding:0 16px;gap:12px}
-.topbar .menu-btn{background:none;border:1px solid var(--line);border-radius:8px;width:40px;height:40px;
+.topbar .menu-btn{background:none;border:1px solid var(--line);border-radius:8px;width:44px;height:44px;
   font-size:19px;color:var(--terra-deep);cursor:pointer}
 .topbar .tt{font-family:var(--serif);font-weight:700;color:var(--terra-deep);font-size:16px}
 .mask{display:none;position:fixed;inset:0;background:rgba(58,53,46,.4);z-index:55}
@@ -62,7 +63,7 @@ section{scroll-margin-top:24px}
 .hero{position:relative;min-height:520px;display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;overflow:hidden}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(46,38,30,.08) 0%,rgba(46,38,30,.30) 55%,rgba(46,38,30,.72) 100%)}
+  background:linear-gradient(180deg,rgba(46,38,30,.22) 0%,rgba(46,38,30,.45) 55%,rgba(46,38,30,.78) 100%)}
 .hero-text{position:relative;z-index:2;padding:64px 44px 40px;width:100%;color:#FDFBF6}
 .hero-text .kicker{font-size:13px;letter-spacing:.32em;color:#EFD9A7;font-weight:500;margin-bottom:14px}
 .hero-text h1{font-size:clamp(30px,4.6vw,48px);color:#FDFBF6;font-weight:900;letter-spacing:.02em}
@@ -199,8 +200,8 @@ tbody td:first-child{font-weight:500;color:#4A4234;white-space:nowrap}
 .beyond a{color:var(--indigo);font-weight:500;word-break:break-all}
 .warning-callout{margin-top:44px;background:#FDF6E3;border:1.5px solid var(--gold);border-radius:14px;
   padding:26px 30px 20px;position:relative;box-shadow:0 4px 16px rgba(201,162,39,.14)}
-.warning-label{position:absolute;top:-14px;left:24px;background:var(--gold);color:#FFF;font-weight:700;
-  font-size:13px;letter-spacing:.1em;padding:4px 14px;border-radius:999px}
+.warning-label{position:absolute;top:-14px;left:24px;background:var(--gold);color:#FFF;font-weight:700;font-size:13px;
+  letter-spacing:.1em;padding:4px 14px;border-radius:999px}
 .warning-callout ol{padding-left:22px;margin-top:8px}
 .warning-callout li{font-size:14.5px;color:#6B5A2E;margin:9px 0;line-height:1.8}
 .warning-callout li::marker{color:var(--gold);font-weight:700}
@@ -225,7 +226,7 @@ footer{border-top:1px solid var(--line);padding:26px 44px 40px;text-align:center
 /* ---------- responsive ---------- */
 @media (max-width:1080px){
   .main{margin-left:0}
-  .sidebar{transform:translateX(-100%);transition:transform .28s ease;box-shadow:none}
+  .sidebar{transform:translateX(-100%);transition:transform .28s ease;box-shadow:none;padding-top:76px}
   .sidebar.open{transform:translateX(0);box-shadow:20px 0 60px rgba(58,53,46,.2)}
   .topbar{display:flex}
   .mask.show{display:block}
