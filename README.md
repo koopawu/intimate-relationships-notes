@@ -2,7 +2,7 @@
 
 《亲密关系》（罗兰·米勒，第 6 版）全书精读笔记：14 章图文内容、8 条全书核心观点，以及 2016 年之后亲密关系研究的「书外新知」。
 
-![网站封面](images/hero.jpg)
+![网站封面](images/hero.svg)
 
 ## 在线阅读
 
@@ -32,7 +32,7 @@ python3 -m http.server 8000
 ```text
 .
 ├── index.html                  # 完整单页网站（CSS / JavaScript 内联）
-├── images/                     # 7 张 JPG 主题插画
+├── images/                     # 7 张 SVG 主题插画
 ├── .gitattributes
 ├── .gitignore
 ├── .nojekyll
